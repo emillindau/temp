@@ -1,0 +1,23 @@
+{
+  "name": "search",
+  "version": "0.0.0",
+  "authors": [
+    "Emil Lindau <emil.lindau@schibsted.se>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "socket.io-client": "~1.3.5"
+  }
+}

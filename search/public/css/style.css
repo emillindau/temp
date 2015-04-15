@@ -1,0 +1,45 @@
+html {
+    overflow-y:scroll;
+}
+
+body {
+    padding-top:10px;
+    background-image: url("../img/concrete_seamless.png");
+    background-repeat: repeat;
+}
+
+#error-list {
+    margin-bottom:30px;
+}
+
+.errorModel {
+    padding:10px;
+    margin:5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.resultList {
+    margin-top:10px;
+    padding:10px;
+    background-color: #FFFFFD;
+}
+
+.search {
+    padding-top:75px;
+    padding-bottom:50px;
+}
+
+.results {
+    padding-top: 15px;
+}
+
+.beverages {
+    padding-top:75px;
+}
+
+.top {
+    margin-top:100px;
+}

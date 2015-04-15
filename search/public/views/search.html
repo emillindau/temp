@@ -1,0 +1,48 @@
+<!-- FORM TO CREATE TODOS -->
+<div class="search">
+    <div id="application-form" class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" name="q" value="" placeholder="Name" size="50" ng-change="searchInBackground()" ng-model="formData.query">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary btn-lg" ng-click="search()"><span class="glyphicon glyphicon-search"></span> Search</button>
+                </span>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container results">
+    <div class="row" id="result-list">
+
+        <!-- LOOP OVER THE ERRORS IN $scope.errors -->
+        <div ng-repeat="res in results">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                {{fetchImage(res)}}
+                <span id="{{res._id}}"></span>
+                <div class="caption">
+                    <h3>{{res._source.Namn}} {{res._source.Namn2}}</h3>
+                    <p>{{res._source.Varugrupp}}</p>
+                    <p>{{res._source.Alkoholhalt}}</p>
+                    <p>{{res._source.Prisinklmoms.split('.')[0]}} SEK</p>
+                    <p><a href="#" class="btn btn-success" role="button" ng-click="addBeverage(res)">Add</a></p>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="col-md-6 col-md-offset-3 text-center resultList">
+            <h2>{{res._source.Namn}} {{res._source.Namn2}}</h2>
+            <p>{{res._source.Prisinklmoms}} :-</p>
+            <p>{{res._source.Varugrupp}}</p>
+            <p>{{res._source.Alkoholhalt}}</p>
+            {{fetchImage(res)}}
+            <div id="{{res._id}}"></div>
+            <input type="button" class="btn btn-success" ng-click="addBeverage(res)" value="Add +" />
+        </div>
+        </div>
+        -->
+    </div>
+</div>

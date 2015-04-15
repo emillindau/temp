@@ -1,0 +1,13 @@
+<div class="container beverages">
+    <div id="beverage-list" class="row">
+        <!-- LOOP OVER THE ERRORS IN $scope.errors -->
+        <div class="col-md-4" ng-repeat="bev in beverages">
+            <h2>{{bev.name}} {{bev.name2}}</h2>
+            <p>{{bev.alcohol}}</p>
+            <p>{{bev.price}}</p>
+            <p>{{bev.type}}</p>
+            <p>{{bev._id}}</p>
+            <p><a class="btn btn-warning" role="button" ng-click="deleteBeverage(bev._id)">Delete »</a>
+        </div>
+    </div>
+</div>
